@@ -2,4 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue',sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.menu-esq {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f30808;
+
 }
