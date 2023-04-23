@@ -10,14 +10,21 @@
     justify-content: space-between;
     padding: 0 10px;
 }
-
+.logo {
+    padding: 10px;
+}
 .menu-esq {
     display: flex;
+    
+}
+.menu-rigth {
+    padding: 10px;
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 30px;
+    padding: 14px;
 }
 
 nav ul li a {
