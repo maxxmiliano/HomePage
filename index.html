@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="./src/light.css">
+    <link rel="stylesheet" href="./src/min.css">
+    <link rel="stylesheet" href="./src/style.css">
+    
     <title>HomePage</title>
 </head>
   
 <body>
     <header>
-        <div class="menu">
+        <div class="menu">           
+            
             <div class="menu-esq">
+                
                 <div class="logo">
-                    <img src="./image/Carros_Antigos-removebg-preview.png" alt="">
+                    <img src="./image/Carros_Antigos-removebg-preview.png" alt="logo">
                 </div>
                 <nav>
                     <ul>
@@ -32,20 +38,23 @@
                 <button type="submit">Pesquisar</button>
             </form>
               
-            
         </div>
-        <div class="line"></div>
+
+          <div class="line"></div>
+
     </header>
 
+        
+        
     <main>
         <section>
             
             <div class="container">
                 <div class="left">
                     <div class="itens">
-                        <div class="select-img">
-                            <img src="./image/ford azul escuro.webp" alt="">
-                        </div>
+                           <div class="select-img">
+                              <img src="./image/ford azul escuro.webp" alt="">
+                           </div>
                         <div class="thumbnails">
 
                             <div class="thumbnail">
@@ -62,49 +71,53 @@
 
                             <div class="thumbnail">
                                 <img src="./image/classicos-ford-1941-04.webp" alt="">
-                            </div>
+                          </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="conteudo">
-                     <h1>Ficha técnica: Ford Coupe De Luxe 1948 </h1>
-                     <p> Motor: 6 cilindros em linha de 3,7 litros;<br>
-                         90 cv a 3.300 rpm; 24,8 mkgf a 5.000 rpm <br>
-                         Câmbio: manual de 3 marchas <br>
-                         Carroceria: fechada, 2 portas, 5 lugares <br>
-                         Dimensões:comprimento, 493 cm; largura, 186 cm... 
-                        
-                        </p>
-                    </div>
-                </div>
-                <div class="imgrolagem">
+                   <div class="right">
+                       <div class="conteudo">
+                               <h1>Ficha técnica: Ford Coupe De Luxe 1948 </h1>
+                               <p> Motor: 6 cilindros em linha de 3,7 litros;<br>
+                                   90 cv a 3.300 rpm; 24,8 mkgf a 5.000 rpm <br>
+                                   Câmbio: manual de 3 marchas <br>
+                                   Carroceria: fechada, 2 portas, 5 lugares <br>
+                                   Dimensões:comprimento, 493 cm; largura, 186 cm 
+                                   altura, 176 cm; <br> entre-eixos, 289 cm; peso, 1.460 kg
+                                   Desempenho: 0 a 96 km/h em 21,9 s; <br> velocidade máxima, 125 km/h
+                               </p>
+                       </div>
+                   </div>
+                
                     <div class="imgs2">
                        <div class="img2">
-                          <img src="./image/rolagem1.jpg" alt="">
+                         <a href="./image/rolagem1.jpg" data-lightbox="image-1" data-title="My caption"><img src="./image/rolagem1.jpg" alt=""></a> 
                        </div>
 
                        <div class="img2">
-                          <img src="./image/rolagem2.jpg" alt="">
+                        <a href="./image/rolagem2.jpg" data-lightbox="image-1" data-title="My caption"><img src="./image/rolagem2.jpg" alt=""></a> 
                        </div>
 
                        <div class="img2">
-                          <img src="./image/rolagem3.jpg" alt="">
+                        <a href="./image/rolagem3.jpg" data-lightbox="image-1" data-title="My caption"><img src="./image/rolagem3.jpg" alt=""></a> 
+                          <!--<img src="./image/rolagem3.jpg" alt="">-->
                        </div>
 
                        <div class="img2">
-                          <img src="./image/rolagem 4.jpg" alt="">
+                        <a href="./image/rolagem 4.jpg" data-lightbox="image-1" data-title="My caption"><img src="./image/rolagem 4.jpg" alt=""></a> 
+                          <!--<img src="./image/rolagem 4.jpg" alt="">-->
                        </div>
 
                     </div>
-                </div>
+            </div>    
 
-                 
-
-            </div>
-            
         </section>
+
     </main>
+    <script src="./js/ligttbox.js"></script>
+    <script src="./js/min.js"></script>
+    <script src="./js/plus.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
