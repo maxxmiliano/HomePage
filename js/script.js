@@ -12,17 +12,15 @@ thumbnails.forEach((thumbnail) => {
   });
 });
 
-// Selecione todos os links das tags <li> na lista
-var links = document.querySelectorAll('#carros li a');
-
-// Adicione um evento de clique a cada link
-links.forEach(function(link) {
-  link.addEventListener('click', function(event) {
-    // Impedir que o link seja aberto imediatamente
-    event.preventDefault();
-    // Obtenha o URL do link clicado
-    var url = this.href;
-    // Abra a nova página
-    window.open(url, '_blank');
+$(document).ready(function() {
+  $('.image-list img').click(function() {
+    var src = $(this).attr('src');
+    $('body').append('<div class="modal"><img src="'+src+'"><div class="close">X</div></div>');
+    $('.modal').fadeIn();
+    $('.close').click(function() {
+      $('.modal').fadeOut(function() {
+        $(this).remove();
+      });
+    });
   });
 });
