@@ -12,15 +12,3 @@ thumbnails.forEach((thumbnail) => {
   });
 });
 
-$(document).ready(function() {
-  $('.image-list img').click(function() {
-    var src = $(this).attr('src');
-    $('body').append('<div class="modal"><img src="'+src+'"><div class="close">X</div></div>');
-    $('.modal').fadeIn();
-    $('.close').click(function() {
-      $('.modal').fadeOut(function() {
-        $(this).remove();
-      });
-    });
-  });
-});

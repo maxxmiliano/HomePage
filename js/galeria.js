@@ -48,7 +48,7 @@ function exibirImagem(event) {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal
+// Obter a imagem e inseri-la dentro do modal
 var images = document.querySelectorAll(".image-list img");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -60,10 +60,10 @@ for (var i = 0; i < images.length; i++) {
   });
 }
 
-// Get the <span> element that closes the modal
+// elemento que fecha modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+// quando o usuario clicar fecha o modal
 span.onclick = function() {
   modal.style.display = "none";
 }
