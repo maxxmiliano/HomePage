@@ -1,5 +1,3 @@
-
-
 // Seleciona todas as imagens da galeria
 var imagens = document.querySelectorAll(".image-list img");
 
@@ -10,19 +8,29 @@ for (var i = 0; i < imagens.length; i++) {
 
 // Função para exibir a imagem em tamanho maior
 function exibirImagem(event) {
+  // Remove a imagem exibida anteriormente
+  var divExistente = document.getElementById("imagem-maior");
+  if (divExistente) {
+    document.body.removeChild(divExistente);
+  }
+
   // Seleciona a imagem clicada
   var imagem = event.target;
 
   // Cria um elemento de imagem para exibir a imagem em tamanho maior
-  /*var imagemMaior = document.createElement("img");
-  imagemMaior.src = imagem.src;*/
+  var imagemMaior = document.createElement("img");
+  imagemMaior.src = imagem.src;
+  imagemMaior.style.maxWidth = "80%";
+  imagemMaior.style.maxHeight = "calc(80% - 60px)";
 
-  // Define o tamanho da imagem maior para preencher 80% da largura da tela
-  imagemMaior.style.width = "50%";
-  imagemMaior.style.height = "auto";
+  // Cria um parágrafo para exibir o nome da imagem
+  var nomeImagem = document.createElement("p");
+  nomeImagem.textContent = imagem.alt;
+  nomeImagem.style.color = "white";
 
   // Cria uma div para exibir a imagem maior em um fundo escuro
   var divEscura = document.createElement("div");
+  divEscura.id = "imagem-maior";
   divEscura.style.position = "fixed";
   divEscura.style.top = "0";
   divEscura.style.left = "0";
@@ -35,6 +43,8 @@ function exibirImagem(event) {
 
   // Adiciona a imagem maior à div
   divEscura.appendChild(imagemMaior);
+  // Adiciona o nome da imagem à div
+  divEscura.appendChild(nomeImagem);
 
   // Adiciona a div à página
   document.body.appendChild(divEscura);
@@ -45,13 +55,6 @@ function exibirImagem(event) {
   });
 }
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Obter a imagem e inseri-la dentro do modal
-var images = document.querySelectorAll(".image-list img");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 for (var i = 0; i < images.length; i++) {
   images[i].addEventListener("click", function() {
     modal.style.display = "block";
@@ -60,10 +63,8 @@ for (var i = 0; i < images.length; i++) {
   });
 }
 
-// elemento que fecha modal
-var span = document.getElementsByClassName("close")[0];
-
-// quando o usuario clicar fecha o modal
-span.onclick = function() {
+// Obter o botão de fechamento e adicionar um evento de clique
+var closeModal = document.getElementById("closeModal");
+closeModal.addEventListener("click", function() {
   modal.style.display = "none";
-}
+});

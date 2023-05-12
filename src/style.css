@@ -266,7 +266,7 @@ form {
   .galeria h2 {
     color: #053a73;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 30px;
   }
 
@@ -285,16 +285,17 @@ form {
     width: 20%;
     height: 150px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
 
   .modal {
+    border-radius: 10px;
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
+    padding-top: 50px;
+    left: 110px;
+    top: 60px;
     width: 80%;
     height: 80%;
     overflow: auto;
@@ -302,7 +303,7 @@ form {
   }
   
   .modal-content {
-    
+    /*imagem de dentro*/
     align-items: center;
     max-width: 80%;
     max-height: 80vh;
@@ -313,18 +314,13 @@ form {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    
-    /*margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;*/
   }
   
-  .close {
+  .close {  /*botao fechar*/
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
+    top: 5px;
+    right: 10px;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
