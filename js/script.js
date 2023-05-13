@@ -12,3 +12,8 @@ thumbnails.forEach((thumbnail) => {
   });
 });
 
+
+
+
+
+
